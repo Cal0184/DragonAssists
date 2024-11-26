@@ -1,0 +1,109 @@
+.bg-image {
+  background-image: url('../images/Itadori.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.transparent-box {
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espaciado entre elementos */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.attendance-info {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.attendance-graph {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  overflow: hidden;
+}
+
+.attendance-button {
+  color: black; 
+  font-size: 16px; 
+  border-radius: 10px;
+  width: 50%; 
+  text-align: center;
+  line-height: 1.2; 
+  white-space: pre-wrap; 
+  padding: 10px 5px; 
+}
+
+.graph-icon {
+  font-size: 60px;
+  color: white;
+}
+
+.qr-button {
+  color: white;
+  --border-radius: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.qr-button:active {
+  transform: scale(0.95);
+}
+
+.calendar-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+ion-list {
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+ion-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+ion-label h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+ion-label p {
+  font-size: 1rem;
+  color: #666;
+}

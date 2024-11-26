@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense"></ion-header>
+
+  <div class="container bg-image">  
+    <div class="transparent-box">
+      <h2>¿Olvidaste tu contraseña?</h2>
+      <p>Por favor, ingresa tu correo electrónico. Te enviaremos un enlace para restablecer tu contraseña.</p>
+
+      <ion-item>
+        <ion-input type="email" placeholder="ejemplo@correo.com"></ion-input>
+      </ion-item>
+
+      <div class="button-container">
+        <ion-button expand="block" (click)="restablecer()">Enviar </ion-button>
+        <ion-button expand="block" color="light" (click)="goBack()">Volver</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>
+

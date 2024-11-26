@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Base de datos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <ion-button expand="block" (click)="goToLogin()">Volver a Inicio de Sesion</ion-button>
+
+    <h3>Usuarios:</h3>
+    <ion-list>
+      <ion-item *ngFor="let user of allUsers">
+        <strong>Usuario:</strong> {{ user.username }}
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+
+

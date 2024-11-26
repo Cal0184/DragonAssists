@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container bg-image">
+    <div class="transparent-box">
+      <h1 class="welcome-text">Bienvenido Alumno: {{ nombre }}</h1>
+
+      <ion-button class="database-button" expand="block" [routerLink]="['/database']">
+        Ir a la Base de Datos
+      </ion-button>
+
+      <ion-button class="attendance-button" (click)="ingresarAsistencia()">
+        Ingresar Asistencia
+      </ion-button>
+
+      <ion-button class="qr-button" expand="block" (click)="startScan()">
+        Escanear Código QR
+      </ion-button>
+
+      <p *ngIf="scannedCode">Código escaneado: {{ scannedCode }}</p>
+
+      <div class="attendance-info">
+        <p>Asistencia actual: {{ porcentajeAsistencia }}%</p>
+      </div>
+
+      <div class="attendance-graph"></div>
+
+      <ion-button class="back-button" (click)="goBack()">Cerrar Sesión</ion-button>
+    </div>
+  </div>
+</ion-content>
